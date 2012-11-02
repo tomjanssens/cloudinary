@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: manifest.xml 3314 2012-02-10 02:14:52Z johanjanssens $ -->
+<install type="component" version="1.5.0">
+	<name>Cloudinary</name>
+	<author>Tom Janssens</author>
+	<creationDate>November 2012</creationDate>
+	<copyright>Copyright (C) 2012 Tom Janssens. (http://tom.janssens.me)</copyright>
+	<license>http://www.gnu.org/licenses/gpl.html GNU/GPL v3</license>
+	<authorEmail>tom@janssens.me</authorEmail>
+	<authorUrl>tom.janssens.me</authorUrl>
+	<version>12.1</version>
+	<description></description>
+	
+	<administration>
+		<submenu>
+			<menu view="images">Images</menu>
+		</submenu>
+	</administration>
+</install>
