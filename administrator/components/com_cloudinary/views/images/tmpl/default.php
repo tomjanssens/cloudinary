@@ -9,6 +9,8 @@
 
 defined('KOOWA') or die('Restricted access'); ?>
 
+<?= @helper('behavior.modal'); ?>
+
 <form action="" method="get" class="-koowa-grid">
 	<table class="adminlist">
 	<thead>
@@ -47,7 +49,7 @@ defined('KOOWA') or die('Restricted access'); ?>
 				<?= @helper('grid.checkbox', array('row' => $image))?>
 			</td>
 			<td>
-				<a href="<?= @route( 'view=image&task=edit&id='. $image->id ); ?>"><?= @escape($image->public_id); ?></a>
+				<a class="modal" href="http://res.cloudinary.com/<?= $params['cloud_name'] ?>/image/upload/w_400/<?= $image->public_id ?>.jpg"><?= @escape($image->public_id); ?></a>
 			</td>
 			<td>
 				<?= $image->table ?>
