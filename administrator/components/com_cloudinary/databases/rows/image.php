@@ -22,7 +22,7 @@ class ComCloudinaryDatabaseRowImage extends KDatabaseRowDefault
 		
 		Cloudinary::config(array("cloud_name" => $params['cloud_name'], "api_key" => $params['api_key'], "api_secret" => $params['api_secret']));
 		
-		$result = Cloudinary\Uploader::upload($this->file, array("tags"=> "kinepolis"));
+		$result = Cloudinary\Uploader::upload($this->file, array("tags"=> ""));
 		
 		$this->public_id = $result['public_id'];
 		
