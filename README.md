@@ -25,7 +25,7 @@ Work in progress …
     ->view('images')
     ->layout('thumbnails')
     ->table('foobar')
-    ->dimensions('w_200')
+    ->transformations('w_200')
     ->row($foobar->id)
     ->display();
 </pre>

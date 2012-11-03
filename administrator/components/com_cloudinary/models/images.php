@@ -8,7 +8,7 @@ class ComCloudinaryModelImages extends ComDefaultModelDefault
 		$this->_state
 			->insert('table', 'cmd')
 			->insert('row', 'int')
-			->insert('dimensions', 'string', 'w_50');
+			->insert('transformations', 'string', 'w_400');
 	}
 	
 	protected function _buildQueryWhere(KDatabaseQuery $query)
