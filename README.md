@@ -6,26 +6,24 @@ Work in progress …
 
 ## Re-usability
 ### Upload layout
-<code>
-<?= @service('com://admin/cloudinary.controller.image')
+<pre>
+@service('com://admin/cloudinary.controller.image')
     ->view('image')
     ->layout('upload')
     ->table('foobar')
     ->row($foobar->id)
     ->display();
-?>
-</code>
+</pre>
 
 ### Thumbnails layout
-<code>
-<?= @service('com://admin/cloudinary.controller.image')
+<pre>
+@service('com://admin/cloudinary.controller.image')
     ->view('images')
     ->layout('thumbnails')
     ->table('foobar')
     ->dimensions('w_200')
     ->row($foobar->id)
     ->display();
-?>
-</code>
+</pre>
 
 Check Cloudinary [resize dimensions](https://cloudinary.com/documentation/image_transformations#resize_dimensions) for more information on the 'dimensions' state.
