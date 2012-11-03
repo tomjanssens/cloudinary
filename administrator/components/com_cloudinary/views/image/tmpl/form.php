@@ -9,11 +9,6 @@
 
 defined('KOOWA') or die('Restricted access'); ?>
 
-<!--
-<script src="media://lib_koowa/js/koowa.js" />
-<style src="media://lib_koowa/css/koowa.css" />
--->
-
 <form action="" method="post" class="-koowa-form" enctype="multipart/form-data">
 <input type="hidden" name="id" value="<?= $image->id ?>" />
 
