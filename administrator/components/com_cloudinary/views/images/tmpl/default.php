@@ -9,11 +9,6 @@
 
 defined('KOOWA') or die('Restricted access'); ?>
 
-<!--
-<script src="media://lib_koowa/js/koowa.js" />
-<style src="media://lib_koowa/css/koowa.css" />
--->
-
 <form action="" method="get" class="-koowa-grid">
 	<table class="adminlist">
 	<thead>
@@ -21,6 +16,12 @@ defined('KOOWA') or die('Restricted access'); ?>
 			<th width="10"></th>
 			<th>
 				<?= @helper('grid.sort', array('column' => 'public_id', 'title' => 'Public ID')) ?>
+			</th>
+			<th>
+				<?= @helper('grid.sort', array('column' => 'table')) ?>
+			</th>
+			<th>
+				<?= @helper('grid.sort', array('column' => 'row')) ?>
 			</th>
 		</tr>
 		<tr>
@@ -47,6 +48,12 @@ defined('KOOWA') or die('Restricted access'); ?>
 			</td>
 			<td>
 				<a href="<?= @route( 'view=image&task=edit&id='. $image->id ); ?>"><?= @escape($image->public_id); ?></a>
+			</td>
+			<td>
+				<?= $image->table ?>
+			</td>
+			<td>
+				<?= $image->row ?>
 			</td>
 		</tr>
 		<? endforeach; ?>
