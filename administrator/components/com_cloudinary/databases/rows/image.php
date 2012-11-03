@@ -41,9 +41,9 @@ class ComCloudinaryDatabaseRowImage extends KDatabaseRowDefault
         
         Cloudinary::config(array("cloud_name" => $params['cloud_name'], "api_key" => $params['api_key'], "api_secret" => $params['api_secret']));
         
-        $result = parent::delete();
-        
         $destroy = Cloudinary\Uploader::destroy($this->public_id);
+        
+        $result = parent::delete();
 
         return $result;
     }
