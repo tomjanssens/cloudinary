@@ -4,6 +4,10 @@ Re-usable [Cloudinary](http://cloudinary.com/) component for Nooku Server.
 
 Work in progress …
 
+## Requirements
+* Nooku Server 12.1
+* PHP 5.3
+
 ## Re-usability
 ### Upload layout
 <pre>
