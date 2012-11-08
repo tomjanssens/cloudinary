@@ -11,8 +11,8 @@ class ComCloudinaryDatabaseRowImage extends KDatabaseRowDefault
 {
     public function save()
     {		
-		require JPATH_LIBRARIES.DS.'cloudinary/cloudinary.php';
-		require JPATH_LIBRARIES.DS.'cloudinary/uploader.php';
+		require JPATH_LIBRARIES.DS.'cloudinary/src/cloudinary.php';
+		require JPATH_LIBRARIES.DS.'cloudinary/src/uploader.php';
 		
 		$file 	= $_FILES['file']['tmp_name'];
 		
@@ -32,8 +32,8 @@ class ComCloudinaryDatabaseRowImage extends KDatabaseRowDefault
     
     public function delete()
     {
-        require JPATH_LIBRARIES.DS.'cloudinary/cloudinary.php';
-        require JPATH_LIBRARIES.DS.'cloudinary/uploader.php';
+        require JPATH_LIBRARIES.DS.'cloudinary/src/cloudinary.php';
+        require JPATH_LIBRARIES.DS.'cloudinary/src/uploader.php';
         
         $component = $this->getService('com://admin/extensions.model.components')->id('33')->getItem();
         $params = $component->params->toArray();
